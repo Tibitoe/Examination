@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 /*Colorpalette*/
 :root {
     --color1: #1A1F16; /* Eerie black */
@@ -11,8 +15,122 @@
   background: var(--color1);
   color: var(--colortext);
 } */
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
+    color: var(--colortext);
 }
+
+/*HEADER START*/
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--color1);
+    z-index: 1000;
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--color1);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0.1rem;
+}
+nav ul li a {
+    background: var(--color2);
+    padding: 10px;
+    color: var(--colortext);
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: var(--color4);
+}
+.active {
+    background-color: var(--color4);
+}
+.header-logo {
+    display: flex;
+    max-height: 50px;
+}
+/*HEADER END*/
+
+/*MAIN START*/
+.main-index {
+    background: url('img/mushrooms/forest.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+.section-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 0.3fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--color1);
+    border-radius: 10px;
+    max-width: 800px;
+}
+.section-home h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.index-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/*MAIN END*/
+
+/*FOOTER START*/
+.site-footer {
+    background-color: var(--color1);
+    padding: 1rem;
+    border-top: 1px solid var(--color2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    color: var(--colortext);
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+/*FOOTER END*/
