@@ -22,6 +22,7 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(1.2rem, 2vw, 1.3rem);
     margin: 0;
     padding: 0;
     color: var(--colortext);
@@ -35,11 +36,14 @@ header {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: var(--color1);
     z-index: 1000;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid var(--color2);
+    background: rgba(26, 31, 22, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(26, 31, 22, 0.3);
 }
 
 h1 {
@@ -85,22 +89,27 @@ nav ul li a:hover {
     background: url('img/mushrooms/forest.webp');
     background-size: cover;
     background-attachment: fixed;
-    height: 64vh;
+    min-height: 100vh;
     overflow: hidden;
-    padding-top: 14rem;
+    padding-top: 6rem;
     padding-bottom: 5rem;
+    text-align: center;
 }
 .section-home {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40px 0.3fr 1fr;
+    grid-template-rows: auto;
     gap: 1.5rem;
     margin: 0 auto;
     padding: 1.5rem;
-    background-color: var(--color1);
-    border-radius: 10px;
     max-width: 800px;
-    border: var(--color2) 3px solid;  
+    text-align: left;
+    line-height: 1.5rem;
+    background: rgba(26, 31, 22, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(26, 31, 22, 0.3);
 }
 .section-home h2{
     text-align: center;
@@ -116,9 +125,40 @@ figcaption {
     font-style: italic;
     padding: 0.1rem;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--colortext);
+}
+.section-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.7rem;
+    margin: 5px auto;
+    padding: 1.5rem;
+    max-width: 1200px;
+    background: rgba(26, 31, 22, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(26, 31, 22, 0.3);
+    /*Added the glassy background from https://css.glass/ */
+}
+.gallery-image img {
     width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.gallery-text-container {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: fit-content;
+    border-radius: 0.5rem;
+    background: rgba(26, 31, 22, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(26, 31, 22, 0.3);
 }
 /*MAIN END*/
 
@@ -146,8 +186,8 @@ figcaption {
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
 }
 /*FOOTER END*/
 
@@ -197,15 +237,19 @@ figcaption {
         display: none;
     }
     .main-index {
-        padding-top: 9.1rem;
+        padding-top: 9.8rem;
     }
     .footer-content {
         flex-direction: column;
         text-align: center;
+        margin: 10px;
+    }
+    .contact-info {
+        margin: 0.8rem;
     }
 
     .social-icons a {
-        margin: 0.5rem 0;
+        margin: 0.5rem;
     }
     /* Hide the navbar when scrolling down */
     .navbar-hidden {
