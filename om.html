@@ -8,20 +8,32 @@
 </head>
 <body>
     <header>
-        <h1>Svenska Svampar</h1>
-        <nav>
+        <h1>Svampino</h1>
+        <nav role="navigation">
             <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="svampar.html">Matsvampar</a></li>
-                <li><a href="om.html" class="active">Om</a></li>
+                <li><a href="index.html" aria-label="Länk till startsidan">Hem</a></li>
+                <li><a href="svampar.html" aria-label="Länk till bildgalleri med matsvampar">Matsvampar</a></li>
+                <li><a href="om.html" class="active" aria-label="Länk till Om mig sidan">Om</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
     </main>
-    <footer>
-
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Kontaka mig: svamp@example.com</p>
+                <p>Telefon: +46 79333333</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/socialmediaicons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="img/socialmediaicons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="img/socialmediaicons/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
     </footer>
+    <!-- Links the scripts.js file for the navbar scrolling !-->
+    <script src="scripts.js"></script>
 </body>
 </html>

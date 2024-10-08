@@ -9,11 +9,11 @@
 <body>
     <header>
         <h1>Svampino</h1>
-        <nav>
+        <nav role="navigation">
             <ul>
-                <li><a href="index.html" class="active">Hem</a></li>
-                <li><a href="svampar.html">Matsvampar</a></li>
-                <li><a href="om.html">Om</a></li>
+                <li><a href="index.html" class="active" aria-label="Länk till startsidan">Hem</a></li>
+                <li><a href="svampar.html" aria-label="Länk till bildgalleri med matsvampar">Matsvampar</a></li>
+                <li><a href="om.html" aria-label="Länk till Om mig sidan">Om</a></li>
             </ul>
         </nav>
     </header>
@@ -29,13 +29,7 @@
             <figure class="index-image">
                 <img src="img/mushrooms/kantareller.webp" alt="Två gula kantareller som växer i mossa">
                 <figcaption>
-                    Kantareller
-                </figcaption>
-            </figure>
-            <figure class="index-image">
-                <img src="img/mushrooms/trattis.webp" alt="Ett gäng trattkantareller som växer i mossa">
-                <figcaption>
-                    Trattkantareller
+                    Två gula kantareller.
                 </figcaption>
             </figure>
         </section>
@@ -53,5 +47,7 @@
             </div>
         </div>
     </footer>
+    <!-- Links the scripts.js file for the navbar scrolling !-->
+    <script src="scripts.js"></script>
 </body>
 </html>
