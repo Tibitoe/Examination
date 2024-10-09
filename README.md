@@ -16,17 +16,21 @@ Vid 500pixlars bredd döljs h1 och knapparna blir vertikala samt tar upp hela sk
 Den döljs även vid skrollning men kommer tillbaks när man skrollar upp.
 Detta behövde jag använda JavaScript för, inte skrivit scriptet själv utan kopierade in det.
 All mobilanpassning ligger i en mediaquery.
+
 2. Hem:
 Hem-sidan gjorde jag med CSS Grid, endast en kolumn och antal rader är auto.
 Hade lika gärna kunnat använda Flex här men det är responsivt och bra.
 Valde att sätta en max-width på 800px och margin 0: auto för att få innehållet centrerat och inte för brett, samt för att den fina bakgrunden skulle synas.
+
 3. Matsvampar:
 Här gjorde jag ett galleri med svampar med CSS Grid.
 Använde mig utav "grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));" för att smidigt kunna lägga till fler bilder.
 Kolumnerna skapas automatiskt och är 300px breda och fyller på så många som får plats i containern, i det här fallet max 3 per kolumn sedan fyller den på en ny rad. Blir responsivt och bra. Minskade paddingen på containern med mediaquery på mobil
 för att bättre utnyttja utrymmet.
+
 4. Om:
 Sidan innehåller bara en Article som är en Flexcontainer.
+
 5. Footer:
 Gjord med Flex.
 Knappar med länk till sociala medier, öppnas i ny flik.
