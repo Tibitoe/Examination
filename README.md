@@ -11,7 +11,6 @@ Jag valde att använda Flex för header/navbar.
 Den innehåller en h1 för och en ul med tre knappar för navigation.
 Active class på respektive sida för att vilka sida man är på.
 Hover effekt på knapparna.
-
 Vid 500pixlars bredd döljs h1 och knapparna blir vertikala samt tar upp hela skärmens bredd.
 Den döljs även vid skrollning men kommer tillbaks när man skrollar upp.
 Detta behövde jag använda JavaScript för, inte skrivit scriptet själv utan kopierade in det.
@@ -37,8 +36,8 @@ Knappar med länk till sociala medier, öppnas i ny flik.
 Justeras med mediaquery för mobil, flex-direction: column; text-align: center; så hamnar ikonerna under kontakttexten.
 
 Tillgänglighet:
-Fullt tillgänglig, lagt till aria-labels till alla länkar och alt-texter på alla bilder.
-Testat sidan med Wave och hittar inga anmärkningar.
+Mycket tillgänglig, lagt till aria-labels till alla länkar och alt-texter på alla bilder.
+Testat sidorna med Wave och hittar inga anmärkningar.
 Använt h1 till h4 i korrekt ordning.
 Haft kontrast i åtanke med bakgrund och text.
 
